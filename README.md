@@ -1,6 +1,6 @@
 # Multi-Language Utility & Use-Case Suite
 
-A professional collection of core utilities and practical use-case applications.
+core and usecase project by gunjari gourav kumar github(github.com/gouravkumar23)
 
 ## 📁 Directory Structure
 - `core/`: Fundamental logic and validation scripts.
@@ -11,7 +11,7 @@ A professional collection of core utilities and practical use-case applications.
 ## 🚀 Core Projects
 
 ### 1. Java: Password Validator
-- **Logic**: Enforces 8+ chars, uppercase, and digits.
+- **Logic**: Enforces 8 or 8+ chars, uppercase, and digits.
 - **File**: `core/java/PasswordValidator.java`
 - **Run**: `javac core/java/PasswordValidator.java && java core.java.PasswordValidator`
 

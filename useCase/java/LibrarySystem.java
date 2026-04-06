@@ -52,8 +52,8 @@ public class LibrarySystem {
                 books.removeIf(b -> b.id == rid);
             } else if (choice == 3) {
                 System.out.print("User ID: "); int id = sc.nextInt(); sc.nextLine();
-                System.out.print("Name: "); String n = sc.nextLine();
-                users.add(new User(id, n));
+                System.out.print("Name: "); String number = sc.nextLine();
+                users.add(new User(id, number));
             } else if (choice == 4) {
                 System.out.print("Book ID: "); int bid = sc.nextInt();
                 for (Book b : books) {

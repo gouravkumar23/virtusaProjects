@@ -1,3 +1,4 @@
+--Creating tables
 CREATE TABLE Customers (
     customer_id NUMBER PRIMARY KEY,
     name VARCHAR2(100),
@@ -26,9 +27,10 @@ CREATE TABLE Order_Items (
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
 
-INSERT INTO Customers VALUES (1, 'John Doe', 'New York');
-INSERT INTO Customers VALUES (2, 'Jane Smith', 'London');
-INSERT INTO Customers VALUES (3, 'Inactive User', 'Paris');
+--Inserting data
+INSERT INTO Customers VALUES (1, 'aarcha', 'nepal');
+INSERT INTO Customers VALUES (2, 'hitesh', 'tamil nadu');
+INSERT INTO Customers VALUES (3, 'vikranth', 'telangana');
 
 INSERT INTO Products VALUES (10, 'Laptop', 'Electronics', 1200);
 INSERT INTO Products VALUES (11, 'Phone', 'Electronics', 800);
@@ -41,12 +43,16 @@ INSERT INTO Order_Items VALUES (100, 10, 1);
 INSERT INTO Order_Items VALUES (101, 11, 2);
 INSERT INTO Order_Items VALUES (101, 12, 5);
 
+--Queries
+--1. Top Selling Products
+
 SELECT p.name, SUM(oi.quantity) as total_sold
 FROM Order_Items oi
 JOIN Products p ON oi.product_id = p.product_id
 GROUP BY p.name
 ORDER BY total_sold DESC;
 
+--2. Monthly Revenue
 SELECT c.name, SUM(p.price * oi.quantity) as total_spent
 FROM Customers c
 JOIN Orders o ON c.customer_id = o.customer_id
@@ -55,16 +61,19 @@ JOIN Products p ON oi.product_id = p.product_id
 GROUP BY c.name
 ORDER BY total_spent DESC;
 
+--3. Inactive Customers
 SELECT TO_CHAR(order_date, 'YYYY-MM') as month, SUM(p.price * oi.quantity) as revenue
 FROM Orders o
 JOIN Order_Items oi ON o.order_id = oi.order_id
 JOIN Products p ON oi.product_id = p.product_id
 GROUP BY TO_CHAR(order_date, 'YYYY-MM');
 
+--4. Sales by Category
 SELECT p.category, SUM(p.price * oi.quantity) as sales
 FROM Products p
 JOIN Order_Items oi ON p.product_id = oi.product_id
 GROUP BY p.category;
 
+--5. Customers with No Orders
 SELECT name FROM Customers
 WHERE customer_id NOT IN (SELECT customer_id FROM Orders);
