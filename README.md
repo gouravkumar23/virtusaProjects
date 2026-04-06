@@ -1,57 +1,88 @@
 # Multi-Language Utility & Use-Case Suite
 
-core and usecase project by gunjari gourav kumar github(github.com/gouravkumar23)
+A comprehensive portfolio of software utilities and data analysis projects spanning Java, Python, and SQL. This suite demonstrates core programming principles, object-oriented design, data visualization, and relational database management.
 
 ## 📁 Directory Structure
-- `core/`: Fundamental logic and validation scripts.
-- `useCase/`: Real-world application scenarios.
+
+```text
+.
+├── core/                   # Fundamental logic and validation scripts
+│   ├── java/               # Password Validator
+│   ├── python/             # Fare Calculator
+│   └── sql/                # Library Schema & Overdue Tracking
+└── useCase/                # Real-world application scenarios
+    ├── java/               # Library Management System (OOP)
+    ├── python/             # Smart Expense Tracker (Data Viz)
+    └── sql/                # Retail Sales Analysis (Business Intelligence)
+```
 
 ---
 
 ## 🚀 Core Projects
 
-### 1. Java: Password Validator
-- **Logic**: Enforces 8 or 8+ chars, uppercase, and digits.
+### 1. Java: SafeLog Password Validator
+A security utility that enforces password complexity through character analysis.
+- **Logic**: Validates minimum length (8+), presence of uppercase letters, and digits.
 - **File**: `core/java/PasswordValidator.java`
-- **Run**: `javac core/java/PasswordValidator.java && java core.java.PasswordValidator`
+- **Output**:
+![Password Validator Output](core/java/image.png)
 
-### 2. Python: Fare Calculator
-- **Logic**: Distance-based pricing with 1.5x peak surge.
+### 2. Python: CityCab Fare Calculator
+A dynamic pricing engine for ride-hailing services.
+- **Logic**: Calculates fares based on distance and vehicle type (Economy/Premium/SUV) with a **1.5x surge** during peak hours (17:00-20:00).
 - **File**: `core/python/FareCalc.py`
-- **Run**: `python core/python/FareCalc.py`
+- **Output**:
+![Fare Calculator Output](core/python/image.png)
 
-### 3. SQL: Library Schema
-- **Logic**: Relational integrity and overdue tracking.
+### 3. SQL: Library Schema & Maintenance
+Relational database design for tracking book circulation and student activity.
+- **Logic**: Tracks overdue books (>14 days) and performs cascading deletes for inactive students (3+ years).
 - **File**: `core/sql/command.sql`
-- **Run**: Execute in any Oracle-compatible SQL environment.
+- **Execution Results**:
+![SQL Query 1](core/sql/query1.png)
+![SQL Query 2](core/sql/query2.png)
+![SQL Query 3](core/sql/query3.png)
 
 ---
 
 ## 🌟 Use-Case Projects
 
 ### 1. Python: Smart Expense Tracker
-- **Tools**: `json` for storage, `matplotlib` for visualization.
-- **Logic**: Categorizes spending, saves to JSON, and generates pie charts.
+A financial tool for logging and visualizing personal spending patterns.
+- **Tools**: `json` for persistence, `matplotlib` for data visualization.
+- **Logic**: Categorizes expenses, detects highest spending areas, and generates visual breakdowns.
 - **File**: `useCase/python/ExpenseTracker.py`
-- **Run**: `python useCase/python/ExpenseTracker.py`
+- **Visual Insights**:
+![Expense Summary](useCase/python/outputAll.png)
+![Spending Pie Chart](useCase/python/piechart.png)
 
-### 2. SQL: Retail Sales Analysis
-- **Tools**: Joins, Aggregations (SUM, COUNT), Grouping, Subqueries.
-- **Logic**: Revenue calculation, top products, and inactive customer detection.
+### 2. SQL: Online Retail Sales Analysis
+Business intelligence queries for an e-commerce environment.
+- **Tools**: Joins, Aggregations, Subqueries, Date Formatting.
+- **Logic**: Calculates monthly revenue, identifies top-selling products, and detects inactive customers.
 - **File**: `useCase/sql/RetailSales.sql`
+- **Business Insights**:
+![Retail Analysis Output](useCase/sql/allQueries.png)
 
 ### 3. Java: Library Management System
-- **Tools**: OOP (Classes/Objects), ArrayList, Scanner, CRUD logic.
-- **Logic**: Automated book tracking, user registration, and fine calculation.
+An automated system for managing library inventory and user transactions.
+- **Tools**: OOP (Classes/Objects), ArrayList, Scanner.
+- **Logic**: Full CRUD for books, user registration, and automated fine calculation for late returns.
 - **File**: `useCase/java/LibrarySystem.java`
-- **Run**: `javac useCase/java/LibrarySystem.java && java useCase.java.LibrarySystem`
+- **System Workflow**:
+![Add & Search](useCase/java/addAndSearch.png)
+![User & Issue](useCase/java/userAndIssue.png)
+![Return & Fine](useCase/java/returnOverdueAndExit.png)
 
 ---
 
 ## 🛠 Tech Stack
-- **Java**: OOP, Collections, Scanner.
-- **Python**: Matplotlib, JSON, CLI logic.
-- **SQL**: Oracle-compatible, Joins, Subqueries.
+- **Java**: Core Java, OOP, Collections Framework.
+- **Python**: Matplotlib, JSON handling, CLI logic.
+- **SQL**: Oracle-compatible SQL, Relational Algebra, Data Modeling.
 
-## 📸 Screenshots
-*Note: Please replace the placeholder images in the folders with your actual terminal screenshots after running the commands above.*
+## 📜 Credits
+Design and development assistance provided by **Dyad** and **Gemini API**.
+
+---
+*Developed by Gunjari Gourav Kumar*
