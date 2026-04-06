@@ -1,7 +1,3 @@
-# Multi-Language Utility Suite
-
-A comprehensive collection of utility applications and database scripts spanning Java, Python, and SQL. This project demonstrates core programming logic, data processing, and relational database management.
-
 ## 🚀 Project Overview
 
 ### 1. Java: SafeLog Password Validator
