@@ -1,6 +1,4 @@
-# Multi-Language Utility & Use-Case Suite
-
-A comprehensive portfolio of software utilities and data analysis projects spanning Java, Python, and SQL. This suite demonstrates core programming principles, object-oriented design, data visualization, and relational database management.
+### Virtusa Project
 
 ## 📁 Directory Structure
 
@@ -48,7 +46,7 @@ Relational database design for tracking book circulation and student activity.
 ## 🌟 Use-Case Projects
 
 ### 1. Python: Smart Expense Tracker
-A financial tool for logging and visualizing personal spending patterns.
+A tool for logging and visualizing personal spending patterns.
 - **Tools**: `json` for persistence, `matplotlib` for data visualization.
 - **Logic**: Categorizes expenses, detects highest spending areas, and generates visual breakdowns.
 - **File**: `useCase/python/ExpenseTracker.py`
@@ -57,7 +55,7 @@ A financial tool for logging and visualizing personal spending patterns.
 ![Spending Pie Chart](useCase/python/piechart.png)
 
 ### 2. SQL: Online Retail Sales Analysis
-Business intelligence queries for an e-commerce environment.
+queries for an e-commerce environment.
 - **Tools**: Joins, Aggregations, Subqueries, Date Formatting.
 - **Logic**: Calculates monthly revenue, identifies top-selling products, and detects inactive customers.
 - **File**: `useCase/sql/RetailSales.sql`
@@ -65,9 +63,9 @@ Business intelligence queries for an e-commerce environment.
 ![Retail Analysis Output](useCase/sql/allQueries.png)
 
 ### 3. Java: Library Management System
-An automated system for managing library inventory and user transactions.
-- **Tools**: OOP (Classes/Objects), ArrayList, Scanner.
-- **Logic**: Full CRUD for books, user registration, and automated fine calculation for late returns.
+A system for managing library inventory and user transactions.
+- **Tools**: OOPs (Classes/Objects), ArrayList, Scanner.
+- **Logic**: CRUD operations for books, user registration, and calclating fine for late returns.
 - **File**: `useCase/java/LibrarySystem.java`
 - **System Workflow**:
 ![Add & Search](useCase/java/addAndSearch.png)
@@ -82,7 +80,7 @@ An automated system for managing library inventory and user transactions.
 - **SQL**: Oracle-compatible SQL, Relational Algebra, Data Modeling.
 
 ## 📜 Credits
-Design and development assistance provided by **Dyad** and **Gemini API**.
+The **README.md** ![README.md](README.md) has been designed and developed with the assistance provided by **#Dyad**.
 
 ---
 *Developed by Gunjari Gourav Kumar*
